@@ -3,16 +3,16 @@
 .menu-btn {
     position: absolute;
     z-index: 3;
-    right: 35px;
-    top: 35px;
+    right: rem(35px);
+    top: rem(35px);
     cursor: pointer;
     @include easeOut();
 
     
 
     .btn-line {
-        width: 28px;
-        height: 3px;
+        width: rem(28px);
+        height: rem(3px);
         margin: 0 0 5px 0;
         background: set-text-color($primary-color);
         @include easeOut();
@@ -48,7 +48,7 @@
     .nav-link {
         display: inline-block;
         position:   relative;
-        font-size: 30px;
+        font-size: rem(30px);
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
@@ -107,8 +107,8 @@
         }
 
         .portrait {
-            width: 250px;
-            height: 250px;
+            width: rem(250px);
+            height: rem(250px);
             background: url('../img/new.jpg');
             border-radius: 50%;
             border: solid 3px $secondary-color;
@@ -116,7 +116,7 @@
     }
 
     .nav-item {
-        transform: translate3d(600px, 0, 0);
+        transform: translate3d(rem(600px), 0, 0);
         @include easeOut();
 
         &.show {
@@ -132,7 +132,7 @@
     .nav-link {
         display: inline-block;
         position: relative;
-        font-size: 30px;
+        font-size: rem(30px);
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;

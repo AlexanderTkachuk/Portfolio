@@ -13,5 +13,5 @@ $(window).on('load', function() {
     setTimeout(function(){
         let $preloader = $('#preloader');
         $preloader.delay(1800).fadeOut('slow');
-    }, 2000);
+    }, 1400);
 });
