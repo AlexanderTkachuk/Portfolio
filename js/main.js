@@ -41,3 +41,28 @@ function toggleMenu() {
     }
 }
       
+$(function() {
+    $('.dot-bar').each(function() {
+
+        let template = $(this).html();
+        let skillsPercent = $(this).parents('.skills-bar').find('.percent').text();
+        
+        let splitted =  skillsPercent.split('');
+        splitted = splitted[0]+'.'+splitted[1];
+
+        let float = parseFloat(splitted);
+
+        let rounded = Math.round(float);
+
+        $(this).html('');
+        for(let i = 0; i < 10; i++) {
+            if(i>rounded) {
+                $(this).append(template).find(':last-child').addClass('gold-dot');
+            }
+            else {
+                $(this).append(template);
+            }
+        }
+        console.log(rounded);
+    });
+});
