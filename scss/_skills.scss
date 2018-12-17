@@ -1,0 +1,56 @@
+.my-skills {
+    display: flex;
+    align-items: center;
+    padding: rem(15px);
+
+
+    .skills-bar {
+        padding: rem(15px) rem(5px);
+        width: rem(700px);
+    }
+
+    .skills-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dot-bar {
+        padding: rem(10px) rem(10px);
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .dot {
+        display: inline-block;
+        width: rem(40px);
+        height: rem(40px);
+        background: $secondary-color;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .dot::before {
+        content: '';
+        width: 100%;
+        display: block;
+        border: 2px solid $secondary-color;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 100%;
+    }
+
+    .gold-dot{ 
+        background: rgb(194, 180, 101);
+    }
+
+    .gold-dot:before{ 
+        background: rgb(194, 180, 101);
+    }
+
+    .dot:last-child::before { 
+        border:none;
+    }
+}

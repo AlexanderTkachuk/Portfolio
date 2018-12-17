@@ -126,6 +126,44 @@
   font-weight: bold;
   color: #25ffe4; }
 
+.my-skills {
+  display: flex;
+  align-items: center;
+  padding: 0.9375rem; }
+  .my-skills .skills-bar {
+    padding: 0.9375rem 0.3125rem;
+    width: 43.75rem; }
+  .my-skills .skills-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .my-skills .dot-bar {
+    padding: 0.625rem 0.625rem;
+    display: flex;
+    justify-content: space-between; }
+  .my-skills .dot {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #eece1a;
+    border-radius: 50%;
+    position: relative; }
+  .my-skills .dot::before {
+    content: '';
+    width: 100%;
+    display: block;
+    border: 2px solid #eece1a;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%; }
+  .my-skills .gold-dot {
+    background: #c2b465; }
+  .my-skills .gold-dot:before {
+    background: #c2b465; }
+  .my-skills .dot:last-child::before {
+    border: none; }
+
 * {
   box-sizing: border-box; }
 
@@ -267,7 +305,11 @@ main {
   padding: 1rem;
   background: #2b2b2b;
   color: white;
-  height: 3.75rem; }
+  height: 3.75rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute; }
 
 @media screen and (min-width: 1171px) {
   .projects {
