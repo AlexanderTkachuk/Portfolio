@@ -198,10 +198,6 @@ main {
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: rem(60px);
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    position: absolute;
 }
 
 @import 'mobile';
